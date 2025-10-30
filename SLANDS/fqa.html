@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css" />
+<head>
+  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - SaaS Company</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5dc; /* beige */
+      color: #222; /* dark font */
+      line-height: 1.6;
+    }
+
+    .faq-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+    }
+
+    .faq-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+
+    .faq-question {
+      font-size: 1.3rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .faq-answer {
+      margin-top: 0.5rem;
+      display: none;
+    }
+
+    /* Toggle effect */
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+    <nav class="siteNav shadow2">
+        <a href="index.html" class="brand">SLANDS</a>
+        <div class="links">
+          <a href="index.html">00 Portfolio</a>
+          <a href="index.html">01 Services</a>
+          <a href="index.html">02 About Us</a>
+          <a href="index.html">03 Contact</a>
+          <a href="index.html">04 fqa</a>
+        </div>
+      </nav>
+
+  <section id="faq" class="faq-section">
+    <h1 class="faq-title">Frequently Asked Questions</h1>
+
+    <div class="faq-item" id="faq-pricing">
+      <h2 class="faq-question">💰 What is the minimum pricing for your services?</h2>
+      <p class="faq-answer">Our minimum project pricing starts at <strong>$1,000</strong>. This ensures we deliver high-quality, fully customized SaaS solutions with ongoing support.</p>
+    </div>
+
+    <div class="faq-item" id="faq-customization">
+      <h2 class="faq-question">⚙️ Can the platform be customized for my business?</h2>
+      <p class="faq-answer">Yes! We tailor features, branding, and integrations to your exact needs. Your colors, your logo, your workflows.</p>
+    </div>
+
+    <div class="faq-item" id="faq-support">
+      <h2 class="faq-question">📞 What kind of support do you provide?</h2>
+      <p class="faq-answer">We offer continuous support including bug fixes, updates, and feature improvements so your platform is always reliable.</p>
+    </div>
+
+    <div class="faq-item" id="faq-timeline">
+      <h2 class="faq-question">⏳ How long does it take to launch?</h2>
+      <p class="faq-answer">Typical projects are ready within 2–6 weeks, depending on complexity and requested features.</p>
+    </div>
+
+    <div class="faq-item" id="faq-ownership">
+      <h2 class="faq-question">🔒 Who owns the final product?</h2>
+      <p class="faq-answer">You own the product. We simply build and maintain it — your data and brand stay yours.</p>
+    </div>
+  </section>
+
+  <script>
+    // Toggle FAQ items
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        q.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
